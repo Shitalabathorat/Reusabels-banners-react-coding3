@@ -12,3 +12,11 @@ body {
 }
 
 /* Write your code here. */
+.app-container {
+  display: flex;
+  flex-direction: column;
+}
+.list-container {
+  display: flex;
+  flex-direction: column;
+}
