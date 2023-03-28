@@ -1,7 +1,7 @@
-import BannerProfile from './Component/BannerCardItem'
+import {Component} from 'react'
 import './App.css'
 
-const bannerCardsList = [
+const userDetailsList = [
   {
     id: 1,
     headerText: 'The Seasons Latest',
@@ -23,14 +23,18 @@ const bannerCardsList = [
   },
 ]
 
-const App = () => (
-  <div>
-    <ul>
-      {bannerCardsList.map(eachItem => (
-        <BannerProfile bannerDetails={eachItem} key={eachItem.id} />
-      ))}
-    </ul>
-  </div>
-)
+class App extends Component {
+  render() {
+    return (
+      <div className="app-container">
+        <ul className="list-container">
+          {userDetailsList.map(eachUser => (
+            <UserProfile userDetails={eachUser} key={eachUser.uniqueNo} />
+          ))}
+        </ul>
+      </div>
+    )
+  }
+}
 
 export default App
