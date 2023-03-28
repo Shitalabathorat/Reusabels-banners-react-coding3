@@ -19,10 +19,16 @@
 }
 
 /* Write your code here. */
-.heading {
-  font-size: 30px;
+.head{
+    color: #326a9d;
+    font-family: roboto;
 }
-.banner-card-container {
-  display: flex;
-  flex-direction: row;
+.para{
+    color: #64748b;
+}
+.btn{
+    color: #326a9d ;
+    background-color: transparent;
+    border-width: 3px;
+    border-color: #326a9d
 }
